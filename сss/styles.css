@@ -1017,3 +1017,15 @@ body {
 .modal-send-button:focus {
   background-color: var(--accent-color);
 }
+
+/*  */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
+  }
+}
