@@ -1,5 +1,42 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 428px;
+    min-width: 428px;
   }
 }
+
+@media screen and (min-width: 428px) {
+  .header-menu-contacts-tel {
+    font-size: 36px;
+  }
+  .social-menu {
+    display: flex;
+    gap: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+  .adress {
+    display: none;
+  }
+  .hero-section-header {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .hero-section-header {
+    font-size: 24px;
+  }
+}
+/* 
+    .services-section {
+      display: none;
+    }
+    .modal {
+      width: 392px;
+      min-height: 586px;
+    }
+  } */

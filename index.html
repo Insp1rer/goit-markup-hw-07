@@ -19,14 +19,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./сss/styles.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./сss/styles.css"/>
+    <link rel="stylesheet" href="./сss/mobile.css"/>
+    <link rel="stylesheet" href="./css/tablet.css"/>
+    <link rel="stylesheet" href="./css/desktop.css"/>
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
+      <div class="container nav-container main-nav">
         <nav class="header-nav main-nav">
           <a href="./index.html" class="header-logo"
             >Web<span class="header-logo-rside">Studio</span></a
@@ -43,7 +43,16 @@
             </li>
           </ul>
         </nav>
-        <address>
+         <button type="button" class="menu-button-burger js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="32" height="22" class="hamburger">
+            <use
+              class="icon-hamburger-menu"
+              href="./images/icons.svg#icon-hamburger"
+            ></use>
+          </svg>
+        </button>
+        <address class="adress">
           <ul class="header-list-auth list">
             <li class="header-list-auth item">
               <a class="header-contacts" href="mailto:info@devstudio.com"
@@ -56,7 +65,87 @@
               >
             </li>
           </ul>
+        </address>     
+      </div>
+      <div class="header-menu js-menu-container">
+        <div class="container js-close-menu">
+          <button type="button" class="menu-button-cross" aria-label="Switcher">
+            <svg width="8" height="8" class="menu-button-cross-item">
+              <use
+                class="icon-cross-menu"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <ul class="header-menu-list list">
+            <li class="header-menu-list item">
+              <a class="header-menu-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="header-menu-list item">
+              <a class="header-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-menu-list item">
+              <a class="header-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="header-menu-list-auth list">
+            <li class="header-menu-list-auth item">
+              <a class="header-menu-contacts-tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="header-menu-list-auth item">
+              <a class="header-menu-contacts-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>    
+          </ul>
         </address>
+        <ul class="social-menu list">
+                <li>
+                  <a
+                    class="social-list-item"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><svg width="24" height="24" class="icon-item">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="social-list-item"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    <svg width="24" height="24" class="icon-item">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-list-item"
+                    href="https://uk-ua.facebook.com/"
+                    target="_blank"
+                  >
+                    <svg width="24" height="24" class="icon-item">
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="social-list-item"
+                    href="https://ua.linkedin.com/"
+                    target="_blank"
+                  >
+                    <svg width="24" height="24" class="icon-item">
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -603,6 +692,12 @@
         </div>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
