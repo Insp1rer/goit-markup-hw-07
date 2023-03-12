@@ -1,5 +1,133 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+  .menu-button-burger {
+    display: none;
+  }
+  .header-list {
+    display: flex;
+    padding: 0;
+    gap: 40px;
+  }
+  .hero-section-background {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-list-auth {
+    padding: 0;
+  }
+  .header-contacts {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  .header-list-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header-logo {
+    margin-right: 120px;
+  }
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--common-color);
+    transition: color 250ms var(--cubic);
+  }
+  .hero-section-header {
+    line-height: calc(60 / 56);
+    margin-bottom: 36px;
+  }
+  .features-section-miniheader {
+    text-align: start;
+    margin-bottom: 8px;
+  }
+  .features-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .features-section-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .team-section-wdt,
+  .companies-section-wdt {
+    max-width: 584px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-section-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  .companies-link,
+  .companies-list-item {
+    width: 168px;
+  }
+  .companies-list {
+    gap: 72px 24px;
+  }
+  .footer-flex {
+    max-width: 584px;
+    flex-direction: column;
+    display: flex;
+    gap: 72px;
+  }
+  .upper-tablet-fix {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: start;
+    gap: 24px;
+  }
+  .footer-email {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .email-form {
+    width: 264px;
+  }
+  .modal {
+    padding-left: 23px;
+    padding-right: 25px;
+    min-height: 586px;
+    width: 408px;
+  }
+
+  .current {
+    position: relative;
+  }
+
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: transform 250ms var(--cubic);
+  }
+
+  .current:hover::after {
+    transform: scaleX(1.15);
+    transition: transform 250ms var(--cubic);
   }
 }
