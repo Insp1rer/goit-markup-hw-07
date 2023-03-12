@@ -301,13 +301,15 @@ body {
   margin: -1px;
 }
 
-/* .features-section-list {
-  display: flex;
+.features-section-list {
+  /* display: flex;
   flex-wrap: wrap;
   padding: 0;
-  gap: 24px;
+  gap: 24px; */
+  margin: 0;
   padding: 0;
-} */
+  align-self: stretch;
+}
 
 /* .features-section-list-item {
   width: 264px;
@@ -322,13 +324,15 @@ body {
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
   margin-bottom: 8px;
-  margin-top: 8px;
 
   color: var(--common-color);
 }
 
 .features-section-miniheader-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -371,23 +375,24 @@ body {
   width: 360px;
 } */
 
-/* .team-section-header {
+.team-section-header {
   margin-bottom: 72px;
   margin-top: 0;
-} */
+}
 
 .team-section {
   background-color: var(--our-team-background);
-  /* margin-bottom: 0;
-  margin-top: 0; */
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-/* .team-section-list {
+.team-section-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
   padding: 0;
-} */
+}
 
 .team-section-list-block {
   /* width: 264px;
@@ -432,8 +437,8 @@ body {
   background-color: var(--common-color);
   margin-bottom: 0;
   margin-top: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-logo-rside {
@@ -441,12 +446,13 @@ body {
 }
 
 .footer-text {
-  /* width: 264px; */
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 0;
-  margin-top: 16px;
+  margin-top: 17.5px;
+  text-align: start;
 
   color: var(--footer-text);
 }
@@ -458,14 +464,14 @@ body {
 
 /*Portfolio*/
 
-/* .buttons {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 24px;
   padding: 0;
   margin-bottom: 72px;
   margin-top: 0;
-} */
+}
 
 .buttons-filter {
   cursor: pointer;
@@ -499,19 +505,19 @@ body {
     border-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-/* .portfolio-images-list {
+.portfolio-images-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   gap: 48px 24px;
-} */
+}
 
 .portfolio-images-motion {
-  /* margin-top: 0;
+  margin-top: 0;
   margin-bottom: 0;
   padding-top: 32px;
   padding-left: 16px;
-  padding-bottom: 32px; */
+  padding-bottom: 32px;
   border-top: none;
   border-bottom: 1px solid var(--footer-text);
   border-left: 1px solid var(--footer-text);
@@ -519,10 +525,10 @@ body {
 }
 
 .portfolio-images-block {
-  /* width: 360px;
+  width: 360px;
   height: 100%;
   margin-top: 0;
-  margin-bottom: 0; */
+  margin-bottom: 0;
   background-color: var(--white-color);
 }
 
@@ -583,23 +589,14 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1200px) {
-  .features-icon {
-    display: none;
-  }
-  .services-section {
-    display: none;
-  }
-}
-
 .social-list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
-  /* gap: 24px;
+  gap: 24px;
   margin-top: 8px;
-  margin-bottom: 32px; */
+  margin-bottom: 32px;
 }
 
 .social-list-item {
@@ -626,9 +623,9 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-.companies-section {
+/* .companies-section {
   padding-top: 130px;
-}
+} */
 
 .companies-header {
   text-align: center;
@@ -643,26 +640,27 @@ img {
   color: var(--common-color);
 }
 
-/* .companies-list {
+.companies-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
-  gap: 24px;
-} */
+  gap: 72px 16px;
+}
 
-/* .companies-list-item {
+.companies-list-item {
   width: 168px;
   height: 88px;
-} */
+}
 
 .companies-link {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0; */
+  padding: 0;
   border: 1px solid var(--border-color);
   border-radius: 4px;
 
@@ -698,20 +696,21 @@ img {
   color: var(--white-color);
 }
 
-/* .footer-social-list {
+.footer-social-list {
   display: flex;
+  justify-content: center;
   padding: 0;
   gap: 16px;
-} */
+}
 
 .footer-social-list-item {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   padding: 0;
-  margin: 0; */
+  margin: 0;
   background-color: rgba(255, 255, 255, 0.1);
   background-position: center;
   border-radius: 50%;
@@ -728,11 +727,13 @@ img {
   transition: background-color 250ms var(--cubic);
 }
 
-/* .footer-flex {
+.footer-flex {
   display: flex;
-  flex-direction: row;
-  gap: 120px;
-} */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 72px;
+}
 
 .portfolio-images-link:hover,
 .portfolio-images-link:focus {
@@ -814,13 +815,13 @@ img {
 }
 
 .overlay-text {
-  /* position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 40px 32px 164px 32px; */
+  padding: 40px 32px 164px 32px;
 
   font-weight: 400;
   font-size: 16px;
@@ -842,11 +843,11 @@ img {
   right: 24px;
   top: 24px;
 
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
-  height: 24px; */
+  height: 24px;
   cursor: pointer;
   background-color: var(--footer-text);
   background-position: center;
@@ -866,25 +867,22 @@ img {
   fill: var(--white-color);
 }
 
-/* .footer-gap-fix {
+.footer-email {
   display: flex;
-  gap: 80px;
-} */
-
-/* .footer-email {
-  display: flex;
-  gap: 24px;
-} */
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
 
 .footer-form-button {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  min-width: 165px;
-  min-height: 40px;
+  width: 165px;
+  height: 40px;
   margin: 0;
-  padding: 0; */
+  padding: 0;
 
   font-size: 16px;
   line-height: 1.5;
@@ -907,10 +905,10 @@ img {
 }
 
 .email-form {
-  /* min-width: 264px;
+  width: 100%;
   min-height: 40px;
   padding: 0;
-  padding-left: 16px; */
+  padding-left: 16px;
 
   outline: none;
   background-color: var(--common-color);
