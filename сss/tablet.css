@@ -126,12 +126,26 @@
     transition: transform 250ms var(--cubic);
   }
 
+  .current:hover::after {
+    transform: scaleX(1.15);
+    transition: transform 250ms var(--cubic);
+  }
+
   .header-portfolio {
     border-bottom: 1px solid #e7e9fc;
   }
 
-  .header-portfolio {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .header-portfolio,
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1157px) and (max-width: 1200px) {
+  .features-icon {
+    display: none;
+  }
+  .services-section {
+    display: none;
   }
 }

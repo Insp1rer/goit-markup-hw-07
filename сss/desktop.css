@@ -1,9 +1,99 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin-left: auto;
+    margin-right: auto;  */
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .hero-section-background {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .footer-background {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .header-list-auth {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header,
+  .header-portfolio {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header-contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .hero-section-header {
+    margin-bottom: 48px;
+  }
+  .features-section-miniheader {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  .features-section-miniheader-text {
+    font-weight: 400;
+  }
+  .features-section-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    gap: 24px;
+  }
+  .features-section-list-item {
+    width: 264px;
+    padding: 0;
+    margin: 0;
+  }
+  .services-section-header {
+    margin-bottom: 72px;
+  }
+  .services-section {
+    padding-top: 0;
+  }
+  .services-section-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .services-section-photos-item {
+    width: 360px;
+  }
+  .team-section-list-block {
+    width: 264px;
+    height: 428px;
+  }
+  .footer-flex {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .upper-tablet-fix {
+    gap: 120px;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .modal {
+    min-width: 408px;
+    min-height: 576px;
   }
 }
